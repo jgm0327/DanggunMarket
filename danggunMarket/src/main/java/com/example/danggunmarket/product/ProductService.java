@@ -110,4 +110,9 @@ public class ProductService {
                 .orElseThrow(() -> new ProductNotFoundException(ProductErrorCode.NOT_FOUND_PRODUCT))
                 .getMember().getMemberId() == loggedInMember.getId();
     }
+
+    public ProductEntity findById(long productId){
+        return productRepository.findById(productId)
+                .orElseThrow(() -> new ProductNotFoundException(ProductErrorCode.NOT_FOUND_PRODUCT));
+    }
 }
