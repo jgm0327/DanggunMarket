@@ -33,7 +33,7 @@ class MemberControllerTest {
                 .telNumber("010-2222-3333")
                 .detail("104동 502호")
                 .city("asd")
-                .zipCode(123)
+                .zipCode("12345")
                 .street("경인로 134번길 72")
                 .build();
 
